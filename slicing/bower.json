@@ -1,0 +1,40 @@
+{
+  "name": "Start Template",
+  "description": "Стартовый шаблон для адаптивной верстки",
+  "main": "index.html",
+  "authors": [
+    "olegverstka <olegverstka@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "http://webfrondev.ru/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+    "dependencies": {
+    "jquery": "1.11.2",
+    "bourbon": "~4.2.6",
+    "fancybox": "~2.1.5",
+    "bxslider-4": "bx-slider.js#~4.2.5",
+    "Selecter": "~3.2.4",
+    "animate.css": "~3.5.0",
+    "jquery-form-styler": "jquery.form-styler#~1.7.4",
+    "jquery-ui": "~1.11.4"
+  },
+  "devDependencies": {
+    "jquery": "1.11.2",
+    "bourbon": "~4.2.6",
+    "fancybox": "~2.1.5",
+    "bxslider-4": "bx-slider.js#~4.2.5",
+    "Selecter": "~3.2.4",
+    "animate.css": "~3.5.0",
+    "jquery-form-styler": "jquery.form-styler#~1.7.4",
+    "jquery-ui": "~1.11.4"
+  }
+}
