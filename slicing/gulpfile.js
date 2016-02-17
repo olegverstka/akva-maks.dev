@@ -1,3 +1,5 @@
+const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
+
 var gulp        = require('gulp'),
     browserSync = require('browser-sync').create(),
     sass        = require('gulp-sass'),
@@ -13,12 +15,15 @@ var gulp        = require('gulp'),
     imagemin    = require('gulp-imagemin'),
     pngquant    = require('imagemin-pngquant'),
     wiredep     = require('wiredep').stream,
-    runSequence = require('run-sequence');
+    runSequence = require('run-sequence'),
+    notify      = require("gulp-notify"),
+    sourcemaps  = require('gulp-sourcemaps'),
+    debug       = require('gulp-debug');
 
-handleError = function(err) {
-    gutil.log(err);
-    gutil.beep();
-};
+// handleError = function(err) {
+//     gutil.log(err);
+//     gutil.beep();
+// };
 
 // Ftp
 gulp.task('ftp', function () {
@@ -29,6 +34,7 @@ gulp.task('ftp', function () {
             pass: 'balyu1357oleg123',
             remotePath: '/'
         }))
+        .pipe(debug({title: 'ftp'}))
         // you need to have some kind of stream after gulp-ftp to make sure it's flushed 
         // this can be a gulp plugin, gulp.dest, or any kind of stream 
         // here we use a passthrough stream 
@@ -39,12 +45,14 @@ gulp.task('ftp', function () {
 gulp.task('wiredep', function () {
     gulp.src('app/*.html')
         .pipe(wiredep())
+        .pipe(debug({title: 'wiredep'}))
         .pipe(gulp.dest('app/'))
 });
 
 // Минификация изображений
 gulp.task('imgmin:build', function() {
     return gulp.src('app/img/*')
+        .pipe(debug({title: 'imgmin:build src'}))
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
@@ -85,22 +93,24 @@ gulp.task('clean', function() {
 
 // Optimizing CSS and JavaScript 
 gulp.task('useref', function() {
-  var assets = useref.assets();
 
   return gulp.src('app/*.html')
-    .pipe(assets)
     // Minifies only if it's a CSS file
     .pipe(gulpif('*.css', minifyCss()))
+    .pipe(debug({title: 'minifyCss'}))
     // Uglifies only if it's a Javascript file
     .pipe(gulpif('*.js', uglify()))
-    .pipe(assets.restore())
+    .pipe(debug({title: 'uglify js'}))
+
     .pipe(useref())
+    .pipe(debug({title: 'useref'}))
     .pipe(gulp.dest('dist'))
 });
 
 // Переместим шрифты из папки src
 gulp.task('fonts:build', function() {
     gulp.src('app/fonts/**/*.*')
+        .pipe(debug({title: 'fonts:build src'}))
         .pipe(gulp.dest('dist/fonts/'))
 });
 
@@ -176,8 +186,13 @@ gulp.task('compass', function() {
       css: 'app/css',
       sass: 'app/scss',
     }))
+    .on('error', notify.onError(function(err) {
+        return {
+            title: 'compass',
+            message: err.message
+        };
+    }))
     .pipe(minifyCss())
-    .on('error', handleError)
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.stream());
 });

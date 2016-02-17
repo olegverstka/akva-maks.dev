@@ -12,6 +12,18 @@ html {
 	border: none;
 	box-shadow: none;
 }
+stong, b {
+	font-weight: bold;
+}
+.wrap_error {
+	border: 1px solid red;
+	color: red;
+	display: none;
+	font-weight: bold;
+	margin: 0 0 20px 0;
+	padding: 5px 0;
+	text-align: center;
+}
 a {
 	&:active, &:focus {
 		outline: none;
@@ -23,6 +35,95 @@ a {
 	font: 24px "robotocondensedregular";
 	margin: -43px 0 0;
 	text-align: center;
+}
+.toggle_mnu {
+	background: none;
+	display: none;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	z-index: 100;
+	border: none;
+	left: 20px;
+	top: 5px;
+	z-index: 9999;
+	span {
+		display: block; 
+	}
+	.sandwich {
+		width: 28px;
+		height: 28px;
+		position: absolute;
+		top: 8px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 200;
+		&.active .sw-topper {
+			top: 9px;
+			-webkit-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+		&.active .sw-bottom {
+			top: 6px;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+		&.active .sw-footer {
+			opacity: 0;
+			top: 0;
+			-webkit-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+		.sw-topper {
+			position: relative;
+			top: 0;
+			width: 28px;
+			height: 3px;
+			background: white;
+			border: none;
+			border-radius: 4px 4px 4px 4px;
+			-webkit-transition: -webkit-transform 0.5s, top 0.2s;
+			transition: transform 0.5s, top 0.2s;
+			display: block; 
+		}
+		.sw-bottom {
+			position: relative;
+			width: 28px;
+			height: 3px;
+			top: 6.6px;
+			background: white;
+			border: none;
+			border-radius: 4px 4px 4px 4px;
+			-webkit-transition: -webkit-transform 0.5s, top 0.2s;
+			transition: transform 0.5s, top 0.2s;
+			-webkit-transition-delay: 0.2s, 0s;
+			transition-delay: 0.2s, 0s;
+		}
+		.sw-footer {
+			position: relative;
+			width: 28px;
+			height: 3px;
+			top: 13.5px;
+			background: white;
+			border: none;
+			border-radius: 4px 4px 4px 4px;
+			-webkit-transition: all 0.5s;
+			transition: all 0.5s;
+			-webkit-transition-delay: 0.1s;
+			transition-delay: 0.1s;
+		}
+	}
+}
+.large {
+	text-transform: uppercase;
+}
+.big {
+	font: 36px "robotocondensedregular";
 }
 .form-row {
 	position: relative;
@@ -49,6 +150,10 @@ input[type=text] {
 	font: 14px "robotocondenseditalic";
 	padding: 8px;
 	width: 100%;
+	&.error {
+		color: inherit;
+		border: 1px solid red !important;
+	}
 }
 .selecter {
 	max-width: 70%;
@@ -121,6 +226,9 @@ input[type=text] {
 			}
 		}
 	}
+}
+.mobil {
+	display: none;
 }
 .contact {
 	text-align: right;
@@ -257,7 +365,7 @@ input[type=text] {
 		float: left;
 		height: 260px;
 		overflow: hidden;
-		width: 330px;
+		width: 315px;
 		img {
 			display: block;
 			max-height: 100%;
@@ -346,19 +454,27 @@ section {
 	}
 }
 .breadcrumbs {
+	line-height: 40px;
 	list-style: none;
-    margin: 0 auto 60px;
-    overflow: hidden;
-    padding: 0;
-    width: 85%;
+	margin: 0 auto 60px;
+	overflow: hidden;
+	padding: 0;
+	width: 85%;
 	li {
 		float: left;
+		&.ui-tabs-active {
+			a {
+				background: #1d629d;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
 		a {
 			color: #272727;
 			font: 14px "robotocondensedregular";
 			padding: 10px 20px;
 			text-transform: uppercase;
-			&:hover, &.active {
+			&:hover {
 				background: #1d629d;
 				color: #fff;
 				text-decoration: none;
@@ -368,7 +484,7 @@ section {
 }
 .pager {
 	margin: 19px auto 117px;
-	width: 43%;
+	width: 50%;
 	ul {
 		list-style: none;
 		margin: 0;
@@ -376,7 +492,7 @@ section {
 		li {
 			float: left;
 			margin: 0 17px 0 0;
-			a {
+			a, span {
 				background-color: #fff;
 				border: 1px solid #1D619D;
 				color: #1D619D;
@@ -474,13 +590,13 @@ section {
 		text-transform: uppercase;
 	}
 	.form_zag {
-		font: 24px "robotocondensedregular";
-		margin-bottom: 32px;
+		font: 24px/24px "robotocondensedregular";
+		margin-bottom: 20px;
 		text-transform: none;
 		span {
 			display: block;
 			font: 24px "robotoboldcondensed";
-			margin: 0 0 -8px;
+			margin: 0 0 -4px;
 			text-transform: uppercase;
 		}
 	}
@@ -710,11 +826,18 @@ section {
 	
 }
 .price_kachectvo {
+	.ak_item {
+		height: 363px;
+	}
 	.zag, .price {
 		text-align: center;
 	}
 	.price {
 		margin: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
 	}
 	img {
 		display: block;
@@ -827,7 +950,7 @@ section {
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 		img {
 			display: block;
-			min-width: 100%;
+			max-width: 100%;
 		}
 	}
 	.zag, .poloch {
@@ -923,6 +1046,7 @@ section {
 	background: #e2e2e2;
 	padding: 0 0 43px;
 	.wrap-video {
+		background: #2a2a2a;
 		border: 7px solid #fff;
 		box-shadow: 0 2px 4px #000;
 		height: 119px;
@@ -930,8 +1054,25 @@ section {
 		width: 223px;
 		a {
 			display: block;
-			@include sprite($s-bg_video);
+			height: 100%;
+			position: relative;
 			text-indent: -9999px;
+			font-size: 0;
+			img {
+				display: block;
+				max-width: 100%;
+			}
+			i {
+				@include sprite($s-play);
+				display: block;
+				left: 50%;
+				margin: -18px 0 0 -18px;
+				position: absolute;
+				top: 50%;
+			}
+		}
+		span {
+			display: none;
 		}
 	}
 }
@@ -964,6 +1105,11 @@ section {
 		a {
 			display: block;
 			color: #fff;
+			font: 20px robotocondensedregular;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -1071,3 +1217,42 @@ section {
 		margin-top: -42px;
 	}
 }
+#privacy_policy {
+	width: 320px;
+}
+.succes {
+	color: green;
+	text-align: center;
+}
+.error_wrap {
+	background: rgba(0, 0, 0, 0.85);
+	display: none;
+	left: 0;
+	line-height: 1;
+	margin: -22px 0 0 -210px;
+	padding: 3px 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 200px;
+	&:after {
+		border: 10px solid transparent;
+		border-left: 10px solid rgba(0,0,0,.85);
+		bottom: 20px;
+		content: "";
+		display: block;
+		margin-right: -10px;
+		margin-top: -10px;
+		position: absolute;
+		right: -10px;
+		top: 50%;
+	}
+	&.error {
+		display: block;
+	}
+	span {
+		color: #fff !important;
+		font-size: 11px;
+	}
+}
+@import "_media.scss";

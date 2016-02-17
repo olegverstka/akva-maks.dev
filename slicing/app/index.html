@@ -48,10 +48,15 @@
 				</div>
 			</form>
 		</div>
-		<!-- video on youyube -->
-		<div id="video" class="modal">
-			<iframe src="https://youtu.be/RmopbZXI7IA"  width="672" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-		</div>
+		<!-- privacy policy -->
+		<div id="privacy_policy" class="modal">
+			<h2>Политика конфиденциальности</h2>
+			<p>
+				Мы не собираем личную информацию о Вас, когда Вы заходите на наш сайт. Вы можете анонимно просматривать сайт. Тем не менее, Ваш браузер все же автоматически сообщает нам тип компьютера и операционной системы, которые Вы используете.</p>
+
+				<p>Единственная личная информация о Вас, которую мы получаем, это те данные, которые Вы добровольно предоставляете при заполнении форм. При заполнении форм на сайте у Вас запросят персональную информацию, такую как имя, телефон и e-mail. Предоставление такой информации в ответ на запрос осуществляется Вами исключительно добровольно. Предоставленная Вами информация используется чтобы оказать те услуги, которые Вы сами запрашиваете.
+			</p>
+		</div>		
 		<!-- end modal -->
 		
 		<header class="header">
@@ -69,6 +74,13 @@
 									<li><a href="#about_as">О нас</a></li>
 								</ul>
 							</nav>
+							<button class="toggle_mnu">
+								<span class="sandwich">
+									<span class="sw-topper"></span>
+									<span class="sw-bottom"></span>
+									<span class="sw-footer"></span>
+								</span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -88,6 +100,9 @@
 								<p class="phone"><i></i>+7 (925)115-31-42</p>
 								<p><a class="fancy" href="#call" class="order">заказать звонок специалиста</a></p>
 							</div>
+							<div class="mobil">
+								<a href="tel://7-925-115-3142" class="btn">+7 (925)115-31-42</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -103,16 +118,22 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4 service">
-							<img src="img/ruler.png" alt="" class="service-img">
-							<p>Любых форм и размеров</p>
+							<div class="wrap-service">
+								<img src="img/ruler.png" alt="" class="service-img">
+								<p>Любых форм и размеров</p>
+							</div>
 						</div>
 						<div class="col-md-4 service">
-							<img src="img/kub.png" alt="" class="service-img">
-							<p>Оптом и в розницу</p>
+							<div class="wrap-service">
+								<img src="img/kub.png" alt="" class="service-img">
+								<p>Оптом и в розницу</p>
+							</div>
 						</div>
 						<div class="col-md-4 service">
-							<img src="img/map.png" alt="" class="service-img">
-							<p>Доставка по Москве и РФ</p>
+							<div class="wrap-service">
+								<img src="img/map.png" alt="" class="service-img">
+								<p>Доставка по Москве и РФ</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -154,16 +175,25 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-						<img src="img/guarantees-1.jpg" alt="">
-						<p>Гарантия на<br/> аквариум 7 лет</p>
+						<div class="guarantees_wrap">
+							<img src="img/guarantees-1.jpg" alt="">
+							<p>Гарантия на<br/> аквариум 7 лет</p>
+						</div>
+						
 					</div>
 					<div class="col-md-4">
-						<img src="img/guarantees-2.jpg" alt="">
-						<p>Гарантия на обслуживание</p>
+						<div class="guarantees_wrap">
+							<img src="img/guarantees-2.jpg" alt="">
+							<p>Гарантия на обслуживание</p>
+						</div>
+						
 					</div>
 					<div class="col-md-4">
-						<img src="img/guarantees-3.jpg" alt="">
-						<p>Гарантия на оборудование до 5 лет</p>
+						<div class="guarantees_wrap">
+							<img src="img/guarantees-3.jpg" alt="">
+							<p>Гарантия на оборудование до 5 лет</p>
+						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -174,105 +204,139 @@
 					<div class="col-md-12">
 						<h2>Каталог</h2>
 					</div>
-					<div class="col-md-12">
-						<ul class="breadcrumbs">
-							<li><a class="active" href="#">Прямоугольный</a></li>
-							<li><a href="#">Панорамный</a></li>
-							<li><a href="#">Куб</a></li>
-							<li><a href="#">Сектор</a></li>
-							<li><a href="#">Дельта</a></li>
-							<li><a href="#">Восьмигранный</a></li>
-							<li><a href="#">Полюдариум</a></li>
-						</ul>
-					</div>
-					<div class="col-md-6">
-						<div class="product_item">
-							<div class="product-slider-wrap">
-								<div class="product-slider">
-									<a class="fancy" href="img/product/1.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба"><img src="img/product/1.jpg" alt=""></a>
-								</div>
-								<div class="product-slider-pager">
-									<a class="fancy" href="img/product/2.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 2"><img src="img/product/2.jpg" alt=""></a>
-									<a class="fancy" href="img/product/3.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 3"><img src="img/product/3.jpg" alt=""></a>
-									<a class="fancy" href="img/product/4.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 4"><img src="img/product/4.jpg" alt=""></a>
-								</div>
-							</div><!-- .product-slider-wrap -->
-							<div class="desc">
-								<p class="volume"><span>Обьем:</span> 150 л.</p>
-								<p class="size"><span>Размеры:</span> 1000*400*500 мм.</p>
+					<div class="tab" id="tabs">
+						<div class="col-md-12">
+							<ul class="breadcrumbs">
+								<li><a class="active" href="#tabs-1">Прямоугольный</a></li>
+								<li><a href="#tabs-2">Панорамный</a></li>
+								<li><a href="#tabs-3">Куб</a></li>
+								<li><a href="#tabs-4">Сектор</a></li>
+								<li><a href="#tabs-5">Дельта</a></li>
+								<li><a href="#tabs-6">Восьмигранный</a></li>
+								<li><a href="#tabs-7">Полюдариум</a></li>
+							</ul>
+						</div>
+						<div id="tabs-1">
+							<div class="col-md-6">
+								<div class="product_item">
+									<div class="product-slider-wrap">
+										<div class="product-slider">
+											<a class="fancy first" href="img/product/1.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба"><img src="img/product/1.jpg" alt=""></a>
+											<a class="fancy" href="img/product/2.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 2"><img src="img/product/2.jpg" alt=""></a>
+											<a class="fancy" href="img/product/3.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 3"><img src="img/product/3.jpg" alt=""></a>
+											<a class="fancy" href="img/product/4.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 4"><img src="img/product/4.jpg" alt=""></a>
+										</div>
+										<div class="product-slider-pager">
+											<a class="fancy noFancy" href="img/product/2.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 2"><img src="img/product/2.jpg" alt=""></a>
+											<a class="fancy noFancy" href="img/product/3.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 3"><img src="img/product/3.jpg" alt=""></a>
+											<a class="fancy noFancy" href="img/product/4.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 4"><img src="img/product/4.jpg" alt=""></a>
+										</div>
+									</div><!-- .product-slider-wrap -->
+									<div class="desc">
+										<p class="volume"><span>Обьем:</span> 150 л.</p>
+										<p class="size"><span>Размеры:</span> 1000*400*500 мм.</p>
+									</div>
+								</div><!-- .product_item -->
 							</div>
-						</div><!-- .product_item -->
-					</div>
-					<div class="col-md-6">
-						<div class="product_item">
-							<div class="product-slider-wrap">
-								<div class="product-slider">
-									<ul class="bxslider">
-										<li><a href="#"><img src="img/product-1.png" alt=""></a></li>
-										<li><a href="#"><img src="img/product-1.png" alt=""></a></li>
-										<li><a href="#"><img src="img/product-1.png" alt=""></a></li>
-									</ul>
-								</div>
-								<div class="product-slider-pager">
-									<a data-slide-index="0" href="#"><img src="img/product-2.png" alt=""></a>
-									<a data-slide-index="1" href="#"><img src="img/product-2.png" alt=""></a>
-									<a data-slide-index="2" href="#"><img src="img/product-2.png" alt=""></a>
-								</div>
-							</div><!-- .product-slider-wrap -->
-							<div class="desc">
-								<p class="volume"><span>Обьем:</span> 150 л.</p>
-								<p class="size"><span>Размеры:</span> 1000*400*500 мм.</p>
+							<div class="col-md-6">
+								<div class="product_item">
+									<div class="product-slider-wrap">
+										<div class="product-slider">
+											<a class="fancy first" href="img/product/1.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба"><img src="img/product/1.jpg" alt=""></a>
+											<a class="fancy" href="img/product/2.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 2"><img src="img/product/2.jpg" alt=""></a>
+											<a class="fancy" href="img/product/3.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 3"><img src="img/product/3.jpg" alt=""></a>
+											<a class="fancy" href="img/product/4.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 4"><img src="img/product/4.jpg" alt=""></a>
+										</div>
+										<div class="product-slider-pager">
+											<a class="fancy noFancy" href="img/product/2.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 2"><img src="img/product/2.jpg" alt=""></a>
+											<a class="fancy noFancy" href="img/product/3.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 3"><img src="img/product/3.jpg" alt=""></a>
+											<a class="fancy noFancy" href="img/product/4.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 4"><img src="img/product/4.jpg" alt=""></a>
+										</div>
+									</div><!-- .product-slider-wrap -->
+									<div class="desc">
+										<p class="volume"><span>Обьем:</span> 150 л.</p>
+										<p class="size"><span>Размеры:</span> 1000*400*500 мм.</p>
+									</div>
+								</div><!-- .product_item -->
 							</div>
-						</div><!-- .product_item -->
-					</div>
-					<div class="col-md-6">
-						<div class="product_item">
-							<div class="product-slider-wrap">
-								<div class="product-slider">
-									<ul class="bxslider">
-										<li><a href="#"><img src="img/product-1.png" alt=""></a></li>
-										<li><a href="#"><img src="img/product-1.png" alt=""></a></li>
-										<li><a href="#"><img src="img/product-1.png" alt=""></a></li>
-									</ul>
-								</div>
-								<div class="product-slider-pager">
-									<a data-slide-index="0" href="#"><img src="img/product-2.png" alt=""></a>
-									<a data-slide-index="1" href="#"><img src="img/product-2.png" alt=""></a>
-									<a data-slide-index="2" href="#"><img src="img/product-2.png" alt=""></a>
-								</div>
-							</div><!-- .product-slider-wrap -->
-							<div class="desc">
-								<p class="volume"><span>Обьем:</span> 150 л.</p>
-								<p class="size"><span>Размеры:</span> 1000*400*500 мм.</p>
+							<div class="col-md-6">
+								<div class="product_item">
+									<div class="product-slider-wrap">
+										<div class="product-slider">
+											<a class="fancy first" href="img/product/1.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба"><img src="img/product/1.jpg" alt=""></a>
+											<a class="fancy" href="img/product/2.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 2"><img src="img/product/2.jpg" alt=""></a>
+											<a class="fancy" href="img/product/3.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 3"><img src="img/product/3.jpg" alt=""></a>
+											<a class="fancy" href="img/product/4.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 4"><img src="img/product/4.jpg" alt=""></a>
+										</div>
+										<div class="product-slider-pager">
+											<a class="fancy noFancy" href="img/product/2.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 2"><img src="img/product/2.jpg" alt=""></a>
+											<a class="fancy noFancy" href="img/product/3.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 3"><img src="img/product/3.jpg" alt=""></a>
+											<a class="fancy noFancy" href="img/product/4.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 4"><img src="img/product/4.jpg" alt=""></a>
+										</div>
+									</div><!-- .product-slider-wrap -->
+									<div class="desc">
+										<p class="volume"><span>Обьем:</span> 150 л.</p>
+										<p class="size"><span>Размеры:</span> 1000*400*500 мм.</p>
+									</div>
+								</div><!-- .product_item -->
 							</div>
-						</div><!-- .product_item -->
-					</div>
-					<div class="col-md-6">
-						<div class="product_item">
-							<div class="product-slider-wrap">
-								<div class="product-slider">
-									<ul class="bxslider">
-										<li><a href="#"><img src="img/product-1.png" alt=""></a></li>
-										<li><a href="#"><img src="img/product-1.png" alt=""></a></li>
-										<li><a href="#"><img src="img/product-1.png" alt=""></a></li>
-									</ul>
-								</div>
-								<div class="product-slider-pager">
-									<a data-slide-index="0" href="#"><img src="img/product-2.png" alt=""></a>
-									<a data-slide-index="1" href="#"><img src="img/product-2.png" alt=""></a>
-									<a data-slide-index="2" href="#"><img src="img/product-2.png" alt=""></a>
-								</div>
-							</div><!-- .product-slider-wrap -->
-							<div class="desc">
-								<p class="volume"><span>Обьем:</span> 150 л.</p>
-								<p class="size"><span>Размеры:</span> 1000*400*500 мм.</p>
+							<div class="col-md-6">
+								<div class="product_item">
+									<div class="product-slider-wrap">
+										<div class="product-slider">
+											<a class="fancy first" href="img/product/1.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба"><img src="img/product/1.jpg" alt=""></a>
+											<a class="fancy" href="img/product/2.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 2"><img src="img/product/2.jpg" alt=""></a>
+											<a class="fancy" href="img/product/3.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 3"><img src="img/product/3.jpg" alt=""></a>
+											<a class="fancy" href="img/product/4.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 4"><img src="img/product/4.jpg" alt=""></a>
+										</div>
+										<div class="product-slider-pager">
+											<a class="fancy noFancy" href="img/product/2.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 2"><img src="img/product/2.jpg" alt=""></a>
+											<a class="fancy noFancy" href="img/product/3.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 3"><img src="img/product/3.jpg" alt=""></a>
+											<a class="fancy noFancy" href="img/product/4.jpg" rel="example_group" title="Прямоугольный, белая крышка и тумба фото 4"><img src="img/product/4.jpg" alt=""></a>
+										</div>
+									</div><!-- .product-slider-wrap -->
+									<div class="desc">
+										<p class="volume"><span>Обьем:</span> 150 л.</p>
+										<p class="size"><span>Размеры:</span> 1000*400*500 мм.</p>
+									</div>
+								</div><!-- .product_item -->
 							</div>
-						</div><!-- .product_item -->
-					</div>
+						</div><!-- #tabs-1 -->
+						<div id="tabs-2">
+							<div class="col-md-12">
+								<p>Контент второй вкладки</p>
+							</div>
+						</div><!-- #tabs-2 -->
+						<div id="tabs-3">
+							<div class="col-md-12">
+								<p>Контент третьей вкладки</p>
+							</div>
+						</div><!-- #tabs-3 -->
+						<div id="tabs-4">
+							<div class="col-md-12">
+								<p>Контент четвертой вкладки</p>
+							</div>
+						</div><!-- #tabs-4 -->
+						<div id="tabs-5">
+							<div class="col-md-12">
+								<p>Контент пятой вкладки</p>
+							</div>
+						</div><!-- #tabs-5 -->
+						<div id="tabs-6">
+							<div class="col-md-12">
+								<p>Контент шестой вкладки</p>
+							</div>
+						</div><!-- #tabs-6 -->
+						<div id="tabs-7">
+							<div class="col-md-12">
+								<p>Контент седьмой вкладки</p>
+							</div>
+						</div>
+					</div><!-- #tabs-7 -->
 					<div class="col-md-12">
 						<div class="pager">
 							<ul>
-								<li><a href="#"><</a></li>
+								<li><span><</span></li>
 								<li><a href="#">1</a></li>
 								<li><a href="#">2</a></li>
 								<li><a href="#">3</a></li>
@@ -491,13 +555,13 @@
 			</div>
 			<div class="container navig">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-4">
 						<a class="active" href="#"><i class="link_1"></i>Пресноводное</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-4">
 						<a href="#"><i class="link_2"></i>Псевдоморское</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-4">
 						<a href="#"><i class="link_3"></i>Морское</a>
 					</div>
 				</div>
@@ -507,28 +571,28 @@
 					<div class="wrap_of_slider">
 						<ul class="of_slider">
 							<li>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg" ><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
 							</li>
 							<li>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
 							</li>
 							<li>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
-								<div class="col-md-4"><a href="#"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
+								<div class="col-md-4"><a class="fancySlider" rel="example_group" href="img/oformlenie.jpg"><img src="img/oformlenie.jpg" alt=""></a></div>
 							</li>
 						</ul>
 					</div>
@@ -643,33 +707,33 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h2>Цена и качество</h2>
-						<p class="zag_text_bottom">Сравнение с известными брендами</p>
+						<p class="zag_text_bottom large">Сравнение с известными брендами</p>
 					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 ak_item">
 						<p class="zag">Аквариум Juwel</p>
 						<img src="img/juwel.jpg" alt="">
-						<p class="price">от 20 000 руб.</p>
+						<p class="price">от 30 000 руб.</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 ak_item">
 						<p class="zag">Аквариум Jebo</p>
 						<img src="img/jebo.jpg" alt="">
-						<p class="price">от 15 000 руб.</p>
+						<p class="price">от 25 000 руб.</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 ak_item">
 						<p class="zag">Аквариум Био дизайн</p>
 						<img src="img/bio_design.jpg" alt="">
-						<p class="price">от 25 000 руб.</p>
+						<p class="price">от 20 000 руб.</p>
 					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<p class="best">Аналогичное качество до 2-х раз ниже!</p>
+						<p class="best">Аналогичное качество до 2-х раз дешевле!</p>
 						<img src="img/1.jpg" alt="">
 					</div>
 				</div>
@@ -685,7 +749,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 wrap_item">
+					<div class="col-md-3 col-sm-12 wrap_item">
 						<div class="kach_item">
 							<div class="item_text left">
 								<p class="zag">Стекло</p>
@@ -715,10 +779,10 @@
 							<div class="item_img right"><img src="img/steklo-4.jpg" alt=""></div>
 						</div>
 					</div>
-					<div class="col-md-5 center-img">
+					<div class="col-md-5 col-sm-12 center-img">
 						<img src="img/kachestvo.jpg" alt="">
 					</div>
-					<div class="col-md-4 wrap_item column">
+					<div class="col-md-4 col-sm-12 wrap_item column">
 						<div class="kach_item">
 							<div class="item_text right">
 								<p class="zag">Кромки</p>
@@ -783,7 +847,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h2>О нас</h2>
-						<p class="zag_text_bottom">наше производство</p>
+						<p class="zag_text_bottom big">наше производство</p>
 					</div>
 				</div>
 			</div>
@@ -850,60 +914,60 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="prsona-item">
-							<img src="img/persona-1.jpg" alt="">
+							<img src="img/sergey.jpg" alt="">
 						</div>
 						<p class="zag">Сергей</p>
 						<p class="poloch">Директор</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="prsona-item">
-							<img src="img/persona-2.jpg" alt="">
+							<img src="img/andrey.jpg" alt="">
 						</div>
 						<p class="zag">Андрей</p>
 						<p class="poloch">Начальник отдела продаж</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="prsona-item">
-							<img src="img/persona-1.jpg" alt="">
+							<img src="img/maxim.jpg" alt="">
 						</div>
 						<p class="zag">Максим</p>
 						<p class="poloch">Главный аквариумист</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="prsona-item">
-							<img src="img/persona-3.jpg" alt="">
+							<img src="img/olga.jpg" alt="">
 						</div>
 						<p class="zag">Ольга</p>
 						<p class="poloch">Менеджер по продажам</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="prsona-item">
 							<img src="img/persona-1.jpg" alt="">
 						</div>
 						<p class="zag">Владимир</p>
 						<p class="poloch">Менеджер по продажам</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="prsona-item">
 							<img src="img/persona-3.jpg" alt="">
 						</div>
 						<p class="zag">Елена</p>
 						<p class="poloch">Менеджер по продажам</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="prsona-item">
 							<img src="img/persona-1.jpg" alt="">
 						</div>
 						<p class="zag">Андрей</p>
 						<p class="poloch">Аквариумист</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="prsona-item">
-							<img src="img/persona-2.jpg" alt="">
+							<img src="img/ekaterina.jpg" alt="">
 						</div>
-						<p class="zag">Борис</p>
+						<p class="zag">Екатерина</p>
 						<p class="poloch">Аквариумист</p>
 					</div>
 				</div>
@@ -1002,44 +1066,44 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="wrap-video">
-							<a class="fancybox-media" href="https://youtu.be/4DhHIAewweY" title="Отзыв от заводчика малавийских цихлид">Отзыв от заводчика малавийских цихлид</a>
+							<a class="fancybox-media" href="https://youtu.be/4DhHIAewweY" title="Отзыв от заводчика малавийских цихлид" rel="media-gallery"><i></i><img src="img/video_1.jpg" alt=""></a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="wrap-video">
-							<a class="fancybox-media" href="https://youtu.be/OGWBP1Yfq6k" title="Отзыв о нашем аквариуме и обслуживании АКВА МАКС">Отзыв о нашем аквариуме и обслуживании АКВА МАКС</a>
+							<a class="fancybox-media" href="https://youtu.be/OGWBP1Yfq6k" title="Отзыв о нашем аквариуме и обслуживании АКВА МАКС" rel="media-gallery"><i></i><img src="img/video_2.jpg" alt=""></a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="wrap-video">
-							<a class="fancybox-media" href="https://youtu.be/ectJlyO-PuU" title="Видео отзыв о наших аквариумах">Видео отзыв о наших аквариумах</a>
+							<a class="fancybox-media" href="https://youtu.be/ectJlyO-PuU" title="Видео отзыв о наших аквариумах" rel="media-gallery"><i></i><img src="img/video_3.jpg" alt=""></a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="wrap-video">
-							<a href="#">Видео 1</a>
+							<a class="fancybox-media" href="https://youtu.be/ectJlyO-PuU" title="Видео отзыв о наших аквариумах">Видео 1</a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="wrap-video">
-							<a href="#">Видео 1</a>
+							<a href="#"><i></i>Видео 1</a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="wrap-video">
-							<a href="#">Видео 1</a>
+							<a href="#"><i></i>Видео 1</a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="wrap-video">
-							<a href="#">Видео 1</a>
+							<a href="#"><i></i>Видео 1</a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="wrap-video">
-							<a href="#">Видео 1</a>
+							<a href="#"><i></i>Видео 1</a>
 						</div>
 					</div>
 				</div>
@@ -1051,18 +1115,17 @@
 					<h2>Наши контакты</h2>
 				</div>
 			</div>
-			
 			<div class="map">
-			<div class="wrap-contact">
-				<p><span>Адрес:</span> г. Москва, ул. Фридриха Энгельса, 21</p>
-				<p><span>График работы:</span> ПН - ПТ: 07:00 - 20:00<br/> СБ: 09:00 - 18:00</p>
-				<p>
-					<a href="mailto:aqua-makc@yandex.ru">aqua-makc@yandex.ru</a>
-					<a href="callto:aqua-makc">aqua-makc</a>
-					<a target="_blank" href="https://vk.com/aqua-makc">vk.com/aqua-makc</a>
-				</p>
-			</div>
-				
+				<div class="wrap-contact">
+					<p><span>Адрес:</span> г. Москва, ул. Фридриха Энгельса, 21</p>
+					<p><span>График работы:</span> ПН - ПТ: 07:00 - 20:00<br/> СБ: 09:00 - 18:00</p>
+					<p>
+						<a href="mailto:aqua-makc@yandex.ru">aqua-makc@yandex.ru</a>
+						<a href="callto:aqua-makc">aqua-makc</a>
+						<a target="_blank" href="https://vk.com/aqua-makc">vk.com/aqua-makc</a>
+					</p>
+				</div>
+				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=tY_XTJ1tU3kHf3mnyyLKcDqANoGSdpoG&width=100%&height=432&lang=ru_RU&sourceType=constructor"></script>
 			</div>	
 		</section>
 		<footer class="footer">
@@ -1074,7 +1137,7 @@
 						</div>
 					</div>
 					<div class="col-md-3">
-						<a class="link" href="#">Политика конфиденциальности</a>
+						<a class="link" href="#privacy_policy">Политика конфиденциальности</a>
 					</div>
 					<div class="col-md-3">
 						<div class="created">
@@ -1098,12 +1161,11 @@
 		<!-- bower:js -->
 		<script src="bower/jquery/dist/jquery.js"></script>
 		<script src="bower/fancybox/source/jquery.fancybox.js"></script>
-		<script src="bower/fancybox/source/helpers/jquery.fancybox-media.js"></script>
 		<script src="bower/bxslider-4/dist/jquery.bxslider.js"></script>
 		<script src="bower/Selecter/jquery.fs.selecter.js"></script>
+		<script src="bower/jquery-ui/jquery-ui.js"></script>
 		<script src="bower/jquery-form-styler/jquery.formstyler.min.js"></script>
 		<script src="bower/Headhesive.js/dist/headhesive.js"></script>
-		<script src="js/jquery.liLanding.js"></script>
 		<script src="bower/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
 		<!-- endbower -->
 		<script src="js/jquery.liLanding.js"></script>

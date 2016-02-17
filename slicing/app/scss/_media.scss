@@ -1,0 +1,145 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.headhesive, .headhesive--unstick {
+		display: none;
+	}
+	.navigation {
+		position: relative;
+		.main-menu {
+			display: none;
+			background: rgba(0, 0, 0, 0.85);
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+			ul {
+				margin: 50px auto;
+				li {
+					float: none;
+					a {
+						line-height: 40px;
+					}
+				}
+			}
+		}
+		.toggle_mnu {
+			display: block;
+		}
+	}
+	.head_center {
+		.logo {
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+			
+		}
+		h1 {
+			font-size: 22px;
+		}
+	}
+	.contact {
+		display: none;
+	}
+	.mobil {
+	    height: 41px;
+	    margin: 30px 0 0;
+	    text-align: center;
+	    .btn {
+	    	line-height: 41px;
+	    }
+	}
+	.head_bottom .container {
+		width: auto;
+	}
+	.service {
+	}
+	.first {
+		margin: -52px 0 0;
+	}
+	.guarantees {
+		background: url(../img/bg_guarantees.jpg);
+		.guarantees_wrap {
+			width: 60%;
+			margin: 0 auto 43px;
+		}
+	}
+	.calcu {
+		.small {
+			width: auto;
+		}
+	}
+	.zag_text_bottom {
+		width: auto;
+	}
+	.obslughivanie {
+		.wrap-service {
+			width: auto;
+		}
+	}
+	.oformlenie .wrap_of_slider .bx-wrapper .bx-controls-direction a {
+		display: none;
+	}
+	.form_dop {
+		.wrap_img {
+			display: none;
+		}
+	}
+	.about-img-large {
+		img {
+			display: block;
+			max-width: 100%;
+		}
+	}
+	.about .about_small_img {
+		margin: 33px 35px 0 0;
+	}
+	.personal .prsona-item {
+		margin: 0 auto;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.service {
+		.wrap-service {
+			margin: 0 auto;
+			width: 50%;
+		}
+		&:last-child {
+			.wrap-service {
+				margin: 0 auto;
+				width: 67%;
+			}
+		}
+	}
+	.first {
+		background: url("../img/bg_first_480.jpg") no-repeat;
+		margin: -202px 0 0;
+		padding: 228px 0 0;
+		height: 699px;
+		.form-first {
+			display: none;
+		}
+	}
+}
+

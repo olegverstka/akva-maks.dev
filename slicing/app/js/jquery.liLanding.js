@@ -11,7 +11,9 @@
 		init: function (options) {
 			var p = {
 				show: function (linkEl, landingItem) {}, 
-				hide: function (linkEl, landingItem) {}
+				hide: function (linkEl, landingItem) {},
+                speedFactor: 1,
+				topMargin: 50
 			};
 			if (options) {
 				$.extend(p, options);
@@ -31,12 +33,13 @@
 						var linkTargetPos = linkTarget.offset().top;
 						var windowPos = $(window).scrollTop();
 						var animDuration = linkTargetPos - windowPos
+                       
 						if(animDuration < 0){
 							animDuration = animDuration*-1	
 						}
 						//scroll the page to the desired block
 						if(linkTarget.length){
-							$('html, body').stop(true).animate({scrollTop:linkTargetPos},animDuration,function(){
+							$('html, body').stop(true).animate({scrollTop:linkTargetPos-p.topMargin},animDuration*p.speedFactor,function(){
 								$(window).trigger('scroll');
 							});
 						}

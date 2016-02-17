@@ -1,0 +1,866 @@
+[[$head]]
+	
+	<!-- modal -->
+	[[$call]]
+	<!-- privacy policy -->
+	[[$privacy_policy]]
+	<!-- end modal -->
+	
+	[[$header]]
+	<section class="first">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-6"></div>
+		  <div class="col-md-6">
+			<div class="form-first">
+			  <h2>Подберем аквариум "под ключ" <span>со скидкой 10%</span></h2>
+			  <ul>
+				<li>Аквариум</li>
+				<li>Крышка-светильник</li>
+				<li>Тумба</li>
+				<li>Оборудование</li>
+				<li>Декорации</li>
+			  </ul>
+			  <form action="#" method="POST">
+				<div class="form-row">
+				  <i class="first_name"></i>
+				  <input type="text" name="first_name" placeholder="Ваше имя">
+				</div>
+				<div class="form-row">
+				  <i class="phone"></i>
+				  <input class="phone_mask" type="text" name="phone" placeholder="Ваш телефон">
+				</div>
+				<div class="form-row">
+				  <input class="btn" type="submit" value="Оставить заявку">
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	<section class="guarantees">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-4">
+			<div class="guarantees_wrap">
+			  <img src="/assets/template/aqua-makc/img/guarantees-1.jpg" alt="">
+			  <p>Гарантия на<br/> аквариум 7 лет</p>
+			</div>
+			
+		  </div>
+		  <div class="col-md-4">
+			<div class="guarantees_wrap">
+			  <img src="/assets/template/aqua-makc/img/guarantees-2.jpg" alt="">
+			  <p>Гарантия на обслуживание</p>
+			</div>
+			
+		  </div>
+		  <div class="col-md-4">
+			<div class="guarantees_wrap">
+			  <img src="/assets/template/aqua-makc/img/guarantees-3.jpg" alt="">
+			  <p>Гарантия на оборудование до 5 лет</p>
+			</div>
+			
+		  </div>
+		</div>
+	  </div>
+	</section>
+	<section id="catalog" class="wrap-catalog landingItem">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-12">
+			<h2>Каталог</h2>
+		  </div>
+		  <div class="col-md-12">
+			<ul class="breadcrumbs">
+			  <li><a class="active" href="#">Прямоугольный</a></li>
+			  <li><a href="#">Панорамный</a></li>
+			  <li><a href="#">Куб</a></li>
+			  <li><a href="#">Сектор</a></li>
+			  <li><a href="#">Дельта</a></li>
+			  <li><a href="#">Восьмигранный</a></li>
+			  <li><a href="#">Полюдариум</a></li>
+			</ul>
+		  </div>
+		  [[+pagetitle]]
+		  [[+content]]
+		  <div class="col-md-12">
+			<div class="pager">
+			  <!--<ul>
+				<li><a href="#">&lt;</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">&gt;</a></li>
+			  </ul>-->
+
+			</div>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .catalog -->
+	  <section class="calcu">
+		<form action="#" method="POST">
+		  <div class="container small">
+			<div class="row">
+			  <div class="col-md-4">
+				<label for="">Выберите обьем</label>
+				<select name="" id="">
+				  <option value="">150 л.</option>
+				  <option value="">200 л.</option>
+				  <option value="">250 л.</option>
+				  <option value="">300 л.</option>
+				</select>
+			  </div>
+			  <div class="col-md-4">
+				<label for="">Выберите размеры</label>
+				<select name="" id="">
+				  <option value="">1000 х 400 х 500 мм.</option>
+				  <option value="">1100 х 400 х 500 мм.</option>
+				  <option value="">1200 х 400 х 500 мм.</option>
+				  <option value="">1300 х 400 х 500 мм.</option>
+				</select>
+			  </div>
+			  <div class="col-md-4">
+				<label for="">Толщина:</label>
+				<select name="" id="">
+				  <option value="">8 мм.</option>
+				  <option value="">10 мм.</option>
+				  <option value="">12 мм.</option>
+				  <option value="">14 мм.</option>
+				</select>
+			  </div>
+			</div>
+		  </div>
+		  <div class="container small bottom-o">
+			<div class="row">
+			  <div class="col-md-2">
+				<label class="label" for="">Аквариум:</label>
+				<input type="checkbox" name="">
+			  </div>
+			  <div class="col-md-4">
+				<label class="label" for="">Крышка светильника:</label>
+				<input type="checkbox" name="">
+			  </div>
+			  <div class="col-md-4">
+				<label class="label" for="">Покрывное стекло:</label>
+				<input type="checkbox" name="">
+			  </div>
+			  <div class="col-md-2">
+				<label class="label" for="">Тумба:</label>
+				<input type="checkbox" name="">
+			  </div>
+			</div>
+		  </div>
+		  <div class="container bg_blue">
+			<div class="row">
+			  <div class="col-md-3">
+				<p>Итого: <span id="summa">7500 руб.</span></p>
+			  </div>
+			  <div class="col-md-3">
+				<div class="form-row">
+				  <i class="first_name"></i>
+				  <input type="text" name="name" placeholder="Ваше имя">
+				</div>
+			  </div>
+			  <div class="col-md-3">
+				<div class="form-row">
+				  <i class="phone"></i>
+				  <input class="phone_mask" type="text" placeholder="Ваш телефон">
+				</div>
+			  </div>
+			  <div class="col-md-3">
+				<input class="btn" type="submit" value="Оставить заявку">
+			  </div>
+			</div>
+		  </div>
+		</form>
+	  </section><!-- .calcu -->
+	  <section class="form_dop">
+		<form action="#" method="POST">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				<h3>В продаже так же имеются</h3>
+			  </div>
+			  <div class="col-md-12">
+				<ul>
+				  <li>Рыбы</li>
+				  <li>Фильтры</li>
+				  <li>Нагреватели</li>
+				  <li>Грунт</li>
+				  <li>Декорации</li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="container large_ot">
+			<div class="row">
+			  <div class="col-md-4">
+				<div class="form-row">
+				  <i class="first_name"></i>
+				  <input type="text" name="name" placeholder="Ваше имя">
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="form-row">
+				  <i class="phone"></i>
+				  <input class="phone_mask" type="text" placeholder="Ваш телефон">
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<input class="btn" type="submit" value="Оставить заявку">
+			  </div>
+			</div>
+		  </div>
+		</form>
+	  </section><!-- .form_dop -->
+	  <section id="order-ak" class="ak-order landingItem">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			  <h2>Аквариум на заказ</h2>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <ul class="ul_blue">
+				<li>Любой формы</li>
+				<li>По вашим размерам до 1 мм</li>
+				<li>120 цветов крышек и тумб</li>
+				<li>Выбор цвета силиконового шва</li>
+				<li>Дополнительно:
+				  <ul>
+					<li>Перегородка в аквариуме</li>
+					<li>Отверстие для слива любого диаметра</li>
+					<li>Переливная шахта</li>
+					<li>Отверстие в крышке для кормушки</li>
+					<li>Вылаз для черепахи</li>
+					<li>Поддон</li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+			<div class="col-md-6">
+			  <p class="zag">Наши выполненные работы</p>
+			  <div class="product_item">
+				<div class="product-slider-wrap">
+				  <div class="product-slider">
+					<ul class="bxslider">
+					  <li><a href="#"><img src="/assets/template/aqua-makc/img/product-1.png" alt=""></a></li>
+					  <li><a href="#"><img src="/assets/template/aqua-makc/img/product-1.png" alt=""></a></li>
+					  <li><a href="#"><img src="/assets/template/aqua-makc/img/product-1.png" alt=""></a></li>
+					</ul>
+				  </div>
+				  <div class="product-slider-pager">
+					<a data-slide-index="0" href="#"><img src="/assets/template/aqua-makc/img/product-2.png" alt=""></a>
+					<a data-slide-index="1" href="#"><img src="/assets/template/aqua-makc/img/product-2.png" alt=""></a>
+					<a data-slide-index="2" href="#"><img src="/assets/template/aqua-makc/img/product-2.png" alt=""></a>
+				  </div>
+				</div><!-- .product-slider-wrap -->
+				<div class="desc">
+				  <p class="volume"><span>Обьем:</span> 150 л.</p>
+				  <p class="size"><span>Размеры:</span> 1000*400*500 мм.</p>
+				</div>
+			  </div><!-- .product_item -->
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .ak-order -->
+	  <section class="form_dop too_collums">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <div class="wrap_img">
+				<img src="img/zamer.png" alt="">
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <form action="#" method="POST">
+				<h3 class="form_zag"><span>Получите консультацию</span> и бесплатный выезд замерщика</h3>
+				<div class="form-row">
+				  <i class="first_name"></i>
+				  <input type="text" name="name" placeholder="Ваше имя">
+				</div>
+				<div class="form-row">
+				  <i class="phone"></i>
+				  <input class="phone_mask" type="text" name="phone" placeholder="Ваш телефон">
+				</div>
+				<div class="form-row">
+				  <input class="btn" type="submit" value="Оставить заявку">
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .form_dop.too_collums -->
+	  <section class="oformlenie">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			  <h2>Оформление на любой вкус</h2>
+			</div>
+		  </div>
+		</div>
+		<div class="container navig">
+		  <div class="row">
+			<div class="col-md-4 col-xs-4">
+			  <a class="active" href="#"><i class="link_1"></i>Пресноводное</a>
+			</div>
+			<div class="col-md-4 col-xs-4">
+			  <a href="#"><i class="link_2"></i>Псевдоморское</a>
+			</div>
+			<div class="col-md-4 col-xs-4">
+			  <a href="#"><i class="link_3"></i>Морское</a>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="wrap_of_slider">
+			  <ul class="of_slider">
+				<li>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg" ><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				</li>
+				<li>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				</li>
+				<li>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				  <div class="col-md-4"><a class="fancySlider" rel="example_group" href="/assets/template/aqua-makc/img/oformlenie.jpg"><img src="/assets/template/aqua-makc/img/oformlenie.jpg" alt=""></a></div>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .oformlenie -->
+	  <section class="form_dop too_collums">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <div class="wrap_img">
+				<img src="img/oformlenie.png" alt="">
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <form action="#" method="POST">
+				<h3 class="form_zag"><span>Выберите оформление</span> которое вам понравилось</h3>
+				<div class="form-row">
+				  <select name="" id="">
+					<option value="">Пресноводное</option>
+					<option value="">Псевдоморское</option>
+					<option value="">Морское</option>
+				  </select>
+				</div>
+				<div class="form-row">
+				  <i class="phone"></i>
+				  <input class="phone_mask" type="text" name="phone" placeholder="Ваш телефон">
+				</div>
+				<div class="form-row">
+				  <input class="btn" type="submit" value="Оставить заявку">
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .form_dop.too_collums -->
+	  <section id="service" class="obslughivanie landingItem">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			  <h2>Обслуживание аквариумов</h2>
+			  <p class="zag_text_bottom">проведем бесплатное обследование<br/> и выполним все необходимые процедуры с гарантией качества</p>
+			</div>
+		  </div>
+		</div>
+		<div class="container wrap-service">
+		  <div class="row">
+			<div class="col-md-4 service">
+			  <img src="/assets/template/aqua-makc/img/portmone.png" alt="">
+			  <p>обслуживание от<br/> 1000 рублей</p>
+			</div>
+			<div class="col-md-4 service">
+			  <img src="/assets/template/aqua-makc/img/procent.png" alt="">
+			  <p>Скидки за покупку более 2-х аквариумов</p>
+			</div>
+			<div class="col-md-4 service">
+			  <img src="/assets/template/aqua-makc/img/calendar.png" alt="">
+			  <p>Скидки за облуживание более 6 месяцев</p>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <img src="/assets/template/aqua-makc/img/procedure.jpg" alt="">
+			</div>
+			<div class="col-md-6">
+			  <p class="zag">Процедуры</p>
+			  <ul class="proceduri">
+				<li>Замена воды</li>
+				<li>Чистка стекл и декораций</li>
+				<li>Чистка фильтров</li>
+				<li>Замена фильтрующих материалов</li>
+				<li>Поддержание жесткости воды</li>
+				<li>Поддержание уровня кислотности и щелочности воды</li>
+				<li>Контоль уровня углекислого газа</li>
+				<li>Подготовка морской воды</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .obslughivanie -->
+	  <section class="form_dop too_collums">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <div class="wrap_img">
+				<img src="/assets/template/aqua-makc/img/obslughivanie.png" alt="">
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <form action="#" method="POST">
+				<h3 class="form_zag"><span>Получите консультацию</span> и узнайте цену Вашего обслуживания</h3>
+				<div class="form-row">
+				  <i class="first_name"></i>
+				  <input type="text" name="name" placeholder="Ваше имя">
+				</div>
+				<div class="form-row">
+				  <i class="phone"></i>
+				  <input class="phone_mask" type="text" name="phone" placeholder="Ваш телефон">
+				</div>
+				<div class="form-row">
+				  <input class="btn" type="submit" value="Оставить заявку">
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .form_dop.too_collums -->
+	  <section id="price_quality" class="price_kachectvo landingItem">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			  <h2>Цена и качество</h2>
+			  <p class="zag_text_bottom large">Сравнение с известными брендами</p>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-4 ak_item">
+			  <p class="zag">Аквариум Juwel</p>
+			  <img src="/assets/template/aqua-makc/img/juwel.jpg" alt="">
+			  <p class="price">от 30 000 руб.</p>
+			</div>
+			<div class="col-md-4 ak_item">
+			  <p class="zag">Аквариум Jebo</p>
+			  <img src="/assets/template/aqua-makc/img/jebo.jpg" alt="">
+			  <p class="price">от 25 000 руб.</p>
+			</div>
+			<div class="col-md-4 ak_item">
+			  <p class="zag">Аквариум Био дизайн</p>
+			  <img src="/assets/template/aqua-makc/img/bio_design.jpg" alt="">
+			  <p class="price">от 20 000 руб.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			  <p class="best">Аналогичное качество до 2-х раз дешевле!</p>
+			  <img src="/assets/template/aqua-makc/img/1.jpg" alt="">
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .price_kachectvo -->
+	  <section class="kachestvo">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			  <h2>Качество наших аквариумов</h2>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-3 col-sm-12 wrap_item">
+			  <div class="kach_item">
+				<div class="item_text left">
+				  <p class="zag">Стекло</p>
+				  <p class="desc">марка - М1 max-прочность</p>
+				</div>
+				<div class="item_img right"><img src="/assets/template/aqua-makc/img/steklo-1.jpg" alt=""></div>
+			  </div>
+			  <div class="kach_item">
+				<div class="item_text left">
+				  <p class="zag">Прозрачность</p>
+				  <p class="desc">кристально чистый вид стекла</p>
+				</div>
+				<div class="item_img right"><img src="/assets/template/aqua-makc/img/steklo-2.jpg" alt=""></div>
+			  </div>
+			  <div class="kach_item">
+				<div class="item_text left">
+				  <p class="zag">Ровное стекло</p>
+				  <p class="desc">без деформаций и риска лопнуть</p>
+				</div>
+				<div class="item_img right"><img src="/assets/template/aqua-makc/img/steklo-3.jpg" alt=""></div>
+			  </div>
+			  <div class="kach_item">
+				<div class="item_text left">
+				  <p class="zag">Без конденсата</p>
+				  <p class="desc">защита от протечки конденсата</p>
+				</div>
+				<div class="item_img right"><img src="/assets/template/aqua-makc/img/steklo-4.jpg" alt=""></div>
+			  </div>
+			</div>
+			<div class="col-md-5 col-sm-12 center-img">
+			  <img src="/assets/template/aqua-makc/img/kachestvo.jpg" alt="">
+			</div>
+			<div class="col-md-4 col-sm-12 wrap_item column">
+			  <div class="kach_item">
+				<div class="item_text right">
+				  <p class="zag">Кромки</p>
+				  <p class="desc">шлифованные кромки исключают риск пореза</p>
+				</div>
+				<div class="item_img left"><img src="/assets/template/aqua-makc/img/kromki.jpg" alt=""></div>
+			  </div>
+			  <div class="kach_item">
+				<div class="item_text right">
+				  <p class="zag">Ребра жесткости</p>
+				  <p class="desc">придают прочность всей конструкции</p>
+				</div>
+				<div class="item_img left"><img src="/assets/template/aqua-makc/img/gestkost.jpg" alt=""></div>
+			  </div>
+			  <div class="kach_item">
+				<div class="item_text right">
+				  <p class="zag">Швы</p>
+				  <p class="desc">найлучшая склейка герметиком chemlux 9013</p>
+				</div>
+				<div class="item_img left"><img src="/assets/template/aqua-makc/img/shivi.jpg" alt=""></div>
+			  </div>
+			  <div class="kach_item">
+				<div class="item_text right">
+				  <p class="zag">Тумба</p>
+				  <p class="desc">прочный карказ тумбы</p>
+				</div>
+				<div class="item_img left"><img src="/assets/template/aqua-makc/img/tumba.jpg" alt=""></div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .kachestvo -->
+	  <section class="form_dop too_collums">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <div class="wrap_img">
+				<img src="/assets/template/aqua-makc/img/korm.png" alt="">
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <form action="#" method="POST">
+				<h3 class="form_zag"><span>Получите в подарок</span> корм для рыб на год</h3>
+				<div class="form-row">
+				  <i class="first_name"></i>
+				  <input type="text" name="name" placeholder="Ваше имя">
+				</div>
+				<div class="form-row">
+				  <i class="phone"></i>
+				  <input class="phone_mask" type="text" name="phone" placeholder="Ваш телефон">
+				</div>
+				<div class="form-row">
+				  <input class="btn" type="submit" value="Узнать подробности">
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .form_dop.too_collums -->
+	  <section id="about_as" class="about landingItem">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			  <h2>О нас</h2>
+			  <p class="zag_text_bottom big">наше производство</p>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-5">
+			  <div class="ot_wrap_about">
+				<div class="wrap_about year">
+				  <div class="about_img">
+					<img src="/assets/template/aqua-makc/img/year.png" alt="">
+				  </div>
+				  <div class="about_text">
+					С 2005 года на рынке Аквариумов
+				  </div>
+				</div>
+			  </div>
+			  <div class="ot_wrap_about">
+				<div class="wrap_about gender">
+				  <div class="about_img">
+					<img src="/assets/template/aqua-makc/img/gender.png" alt="">
+				  </div>
+				  <div class="about_text">
+					15 специалистов с опытом более 10 лет
+				  </div>
+				</div>
+			  </div>
+			  <div class="ot_wrap_about">
+				<div class="wrap_about city">
+				  <div class="about_img">
+					<img src="/assets/template/aqua-makc/img/city.png" alt="">
+				  </div>
+				  <div class="about_text">
+					Свое производство и магазин в Москве
+				  </div>
+				</div>
+			  </div>
+			  <div class="ot_wrap_about">
+				<div class="wrap_about settings">
+				  <div class="about_img">
+					<img src="/assets/template/aqua-makc/img/settings.png" alt="">
+				  </div>
+				  <div class="about_text">
+					Новейшее оборудование
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-7">
+			  <div class="about-img-large"><img src="/assets/template/aqua-makc/img/about_1.jpg" alt=""></div>
+			  <div class="about_small_img"><img src="/assets/template/aqua-makc/img/about_2.jpg" alt=""></div>
+			  <div class="about_small_img"><img src="/assets/template/aqua-makc/img/about_2.jpg" alt=""></div>
+			  <div class="about_small_img"><img src="/assets/template/aqua-makc/img/about_2.jpg" alt=""></div>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .about -->
+	  <section class="personal">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			  <h2>Наш персонал специалистов</h2>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-3 col-xs-6">
+			  <div class="prsona-item">
+				<img src="/assets/template/aqua-makc/img/sergey.jpg" alt="">
+			  </div>
+			  <p class="zag">Сергей</p>
+			  <p class="poloch">Директор</p>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="prsona-item">
+				<img src="/assets/template/aqua-makc/img/andrey.jpg" alt="">
+			  </div>
+			  <p class="zag">Андрей</p>
+			  <p class="poloch">Начальник отдела продаж</p>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="prsona-item">
+				<img src="/assets/template/aqua-makc/img/maxim.jpg" alt="">
+			  </div>
+			  <p class="zag">Максим</p>
+			  <p class="poloch">Главный аквариумист</p>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="prsona-item">
+				<img src="/assets/template/aqua-makc/img/olga.jpg" alt="">
+			  </div>
+			  <p class="zag">Ольга</p>
+			  <p class="poloch">Менеджер по продажам</p>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="prsona-item">
+				<img src="/assets/template/aqua-makc/img/persona-1.jpg" alt="">
+			  </div>
+			  <p class="zag">Владимир</p>
+			  <p class="poloch">Менеджер по продажам</p>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="prsona-item">
+				<img src="/assets/template/aqua-makc/img/persona-3.jpg" alt="">
+			  </div>
+			  <p class="zag">Елена</p>
+			  <p class="poloch">Менеджер по продажам</p>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="prsona-item">
+				<img src="/assets/template/aqua-makc/img/persona-1.jpg" alt="">
+			  </div>
+			  <p class="zag">Андрей</p>
+			  <p class="poloch">Аквариумист</p>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="prsona-item">
+				<img src="/assets/template/aqua-makc/img/ekaterina.jpg" alt="">
+			  </div>
+			  <p class="zag">Екатерина</p>
+			  <p class="poloch">Аквариумист</p>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .personal -->
+	  <section id="wholesalers" class="form_dop too_collums gender_form landingItem">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-6">
+			  <div class="wrap_img">
+				<img src="/assets/template/aqua-makc/img/gender_form.png" alt="">
+			  </div>
+			</div>
+			<div class="col-md-6">
+			  <form action="#" method="POST">
+				<h3 class="form_zag"><span>Оптовикам и диллерам</span>получите оптовый прайс и все условия сотрудничества</h3>
+				<div class="form-row">
+				  <i class="first_name"></i>
+				  <input type="text" name="name" placeholder="Ваше имя">
+				</div>
+				<div class="form-row">
+				  <i class="phone"></i>
+				  <input class="phone_mask" type="text" name="phone" placeholder="Ваш телефон">
+				</div>
+				<div class="form-row">
+				  <input class="btn" type="submit" value="Оставить заявку">
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .form_dop.too_collums -->
+	  <section class="preimuchestva">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12">
+			  <h2>Преимущества для Вас</h2>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-4 best-price">
+			  <p>
+				<i></i>Лучшие цены<br/> на рынке
+			  </p>
+			</div>
+			<div class="col-md-4 alert">
+			  <p>
+				<i></i>Проверка на<br/> гермитичность
+			  </p>
+			</div>
+			<div class="col-md-4 nalichie">
+			  <p>
+				<i></i>Товар всегда<br/> в наличии
+			  </p>
+			</div>
+			<div class="col-md-4 best-gender">
+			  <p>
+				<i></i>Экспертные<br/> аквариумисты
+			  </p>
+			</div>
+			<div class="col-md-4 time">
+			  <p>
+				<i></i>Время доставки в<br/> удобное для вас время
+			  </p>
+			</div>
+			<div class="col-md-4 key">
+			  <p>
+				<i></i>Установка<br/> "Под ключ"
+			  </p>
+			</div>
+			<div class="col-md-4 many">
+			  <p>
+				<i></i>Оплата при<br/> получении товара
+			  </p>
+			</div>
+			<div class="col-md-4 track">
+			  <p>
+				<i></i>Доставка<br/> по РФ от 1 дня
+			  </p>
+			</div>
+			<div class="col-md-4 dilivery">
+			  <p>
+				<i></i>Страхование<br/> доставки по РФ
+			  </p>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .preimuchestva -->
+	  <section class="otzivi">
+		<div class="container">
+		  <div class="row">
+			<h2>Покупатели о нас</h2>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-3 col-xs-6">
+			  <div class="wrap-video">
+				<a class="fancybox-media" href="https://youtu.be/4DhHIAewweY" title="Отзыв от заводчика малавийских цихлид" rel="media-gallery"><i></i><img src="/assets/template/aqua-makc/img/video_1.jpg" alt=""></a>
+			  </div>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="wrap-video">
+				<a class="fancybox-media" href="https://youtu.be/OGWBP1Yfq6k" title="Отзыв о нашем аквариуме и обслуживании АКВА МАКС" rel="media-gallery"><i></i><img src="/assets/template/aqua-makc/img/video_2.jpg" alt=""></a>
+			  </div>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="wrap-video">
+				<a class="fancybox-media" href="https://youtu.be/ectJlyO-PuU" title="Видео отзыв о наших аквариумах" rel="media-gallery"><i></i><img src="/assets/template/aqua-makc/img/video_3.jpg" alt=""></a>
+			  </div>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="wrap-video">
+				<a class="fancybox-media" href="https://youtu.be/ectJlyO-PuU" title="Видео отзыв о наших аквариумах">Видео 1</a>
+			  </div>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="wrap-video">
+				<a href="#"><i></i>Видео 1</a>
+			  </div>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="wrap-video">
+				<a href="#"><i></i>Видео 1</a>
+			  </div>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="wrap-video">
+				<a href="#"><i></i>Видео 1</a>
+			  </div>
+			</div>
+			<div class="col-md-3 col-xs-6">
+			  <div class="wrap-video">
+				<a href="#"><i></i>Видео 1</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section><!-- .otzivi -->
+	[[$contact]]
+[[$footer]]
