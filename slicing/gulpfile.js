@@ -95,22 +95,19 @@ gulp.task('clean', function() {
 gulp.task('useref', function() {
 
   return gulp.src('app/*.html')
-    // Minifies only if it's a CSS file
-    .pipe(gulpif('*.css', minifyCss()))
-    .pipe(debug({title: 'minifyCss'}))
-    // Uglifies only if it's a Javascript file
-    .pipe(gulpif('*.js', uglify()))
-    .pipe(debug({title: 'uglify js'}))
-
     .pipe(useref())
-    .pipe(debug({title: 'useref'}))
+    // Minifies only if it's a CSS file
+    .pipe(gulpif('css/*.css', minifyCss()))
+    .pipe(debug({title: 'minify css'}))
+    // Uglifies only if it's a Javascript file
+    .pipe(gulpif('js/*.js', uglify()))
+    .pipe(debug({title: 'uglify js'}))
     .pipe(gulp.dest('dist'))
 });
 
 // Переместим шрифты из папки src
 gulp.task('fonts:build', function() {
     gulp.src('app/fonts/**/*.*')
-        .pipe(debug({title: 'fonts:build src'}))
         .pipe(gulp.dest('dist/fonts/'))
 });
 

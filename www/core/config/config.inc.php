@@ -4,46 +4,46 @@
  */
 $database_type = 'mysql';
 $database_server = 'localhost';
-$database_user = 'root';
-$database_password = '';
+$database_user = '046308445_akva';
+$database_password = 'balyu1357oleg';
 $database_connection_charset = 'utf8';
-$dbase = 'acva-max';
+$dbase = 'olegverstka_akva';
 $table_prefix = 'modx_';
-$database_dsn = 'mysql:host=localhost;dbname=acva-max;charset=utf8';
+$database_dsn = 'mysql:host=localhost;dbname=olegverstka_akva;charset=utf8';
 $config_options = array (
 );
 $driver_options = array (
 );
 
-$lastInstallTime = 1454875080;
+$lastInstallTime = 1455183843;
 
-$site_id = 'modx56b7a1c8a84b65.42756111';
-$site_sessionname = 'SN56b7a190a4182';
+$site_id = 'modx56bc57e3d81ed2.72626828';
+$site_sessionname = 'SN56bc57ac49d6f';
 $https_port = '443';
-$uuid = 'db2c517c-e211-4dc2-8a48-66ed8ba4603e';
+$uuid = 'b81943c6-ef83-4631-9611-204b22d6d98a';
 
 if (!defined('MODX_CORE_PATH')) {
-    $modx_core_path= 'D:/OpenServer/domains/akva-maks.dev/www/core/';
+    $modx_core_path= 'd:\OpenServer\domains/akva-max.dev/www/core/';
     define('MODX_CORE_PATH', $modx_core_path);
 }
 if (!defined('MODX_PROCESSORS_PATH')) {
-    $modx_processors_path= 'D:/OpenServer/domains/akva-maks.dev/www/core/model/modx/processors/';
+    $modx_processors_path= 'd:\OpenServer\domains/akva-max.dev/www/core/model/modx/processors/';
     define('MODX_PROCESSORS_PATH', $modx_processors_path);
 }
 if (!defined('MODX_CONNECTORS_PATH')) {
-    $modx_connectors_path= 'D:/OpenServer/domains/akva-maks.dev/www/connectors/';
+    $modx_connectors_path= 'd:\OpenServer\domains/akva-max.dev/www/connectors/';
     $modx_connectors_url= '/connectors/';
     define('MODX_CONNECTORS_PATH', $modx_connectors_path);
     define('MODX_CONNECTORS_URL', $modx_connectors_url);
 }
 if (!defined('MODX_MANAGER_PATH')) {
-    $modx_manager_path= 'D:/OpenServer/domains/akva-maks.dev/www/manager/';
+    $modx_manager_path= 'd:\OpenServer\domains/akva-max.dev/www/manager/';
     $modx_manager_url= '/manager/';
     define('MODX_MANAGER_PATH', $modx_manager_path);
     define('MODX_MANAGER_URL', $modx_manager_url);
 }
 if (!defined('MODX_BASE_PATH')) {
-    $modx_base_path= 'D:/OpenServer/domains/akva-maks.dev/www/';
+    $modx_base_path= 'd:\OpenServer\domains/akva-max.dev/www/';
     $modx_base_url= '/';
     define('MODX_BASE_PATH', $modx_base_path);
     define('MODX_BASE_URL', $modx_base_url);
@@ -59,10 +59,10 @@ if (!defined('MODX_URL_SCHEME')) {
 }
 if (!defined('MODX_HTTP_HOST')) {
     if(defined('PHP_SAPI') && (PHP_SAPI == "cli" || PHP_SAPI == "embed")) {
-        $http_host='akva-maks.dev';
+        $http_host='akva-max.webfrontdev.ru';
         define('MODX_HTTP_HOST', $http_host);
     } else {
-        $http_host= array_key_exists('HTTP_HOST', $_SERVER) ? $_SERVER['HTTP_HOST'] : 'akva-maks.dev';
+        $http_host= array_key_exists('HTTP_HOST', $_SERVER) ? $_SERVER['HTTP_HOST'] : 'akva-max.dev';
         if ($_SERVER['SERVER_PORT'] != 80) {
             $http_host= str_replace(':' . $_SERVER['SERVER_PORT'], '', $http_host); // remove port from HTTP_HOST
         }
@@ -75,7 +75,7 @@ if (!defined('MODX_SITE_URL')) {
     define('MODX_SITE_URL', $site_url);
 }
 if (!defined('MODX_ASSETS_PATH')) {
-    $modx_assets_path= 'D:/OpenServer/domains/akva-maks.dev/www/assets/';
+    $modx_assets_path= 'd:\OpenServer\domains/akva-max.dev/www/assets/';
     $modx_assets_url= '/assets/';
     define('MODX_ASSETS_PATH', $modx_assets_path);
     define('MODX_ASSETS_URL', $modx_assets_url);

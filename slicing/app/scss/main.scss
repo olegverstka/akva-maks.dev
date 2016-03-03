@@ -365,24 +365,16 @@ input[type=text] {
 		float: left;
 		height: 260px;
 		overflow: hidden;
-		width: 315px;
+		width: 325px;
 		img {
 			display: block;
 			max-height: 100%;
 		}
-		.bx-wrapper {
-			height: 260px;
-			margin: 0;
-			.bx-viewport {
-				height: 260px !important;
-			}
-			img {
-				margin: 12px auto 0;
-			}
-		}
 	}
 	.product-slider-pager {
 		float: right;
+		height: 260px;
+		overflow: hidden;
 		width: 102px;
 		a {
 			background: #fff;
@@ -395,7 +387,7 @@ input[type=text] {
 			img {
 				display: block;
 				margin: 0 auto;
-				max-height: 100%;
+				max-width: 100%;
 			}
 		}
 	}
@@ -484,13 +476,13 @@ section {
 }
 .pager {
 	margin: 19px auto 117px;
-	width: 50%;
+	text-align: center;
 	ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		li {
-			float: left;
+			display: inline-block;
 			margin: 0 17px 0 0;
 			a, span {
 				background-color: #fff;
@@ -505,6 +497,11 @@ section {
 					text-decoration: none;
 				}
 			}
+			span {
+				background: #1D619D;
+				color: #fff;
+				text-decoration: none;
+			}
 			&:last-child, &:first-child {
 				a {
 					background: #1D619D;
@@ -518,11 +515,12 @@ section {
 					}
 				}
 			}
-			&:last-child {
-				margin-left: 61px;
-			}
-			&:first-child {
-				margin-right: 61px;
+			&.active {
+				a {
+					background: #1D619D;
+					color: #fff;
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -931,10 +929,17 @@ section {
 			width: 175px;
 		}
 	}
+	.about-img-large, .about_small_img {
+		img {
+			max-width: 100%;
+		}
+	}
 	.about_small_img {
 		float: left;
-		margin: 33px 42px 0 0;
-		&:nth-child(4n) {
+		height: 70px;
+		margin: 10px 10px 0 0;
+		width: 124px;
+		&:nth-child(5n) {
 			margin-right: 0;
 		}
 	}
@@ -1222,6 +1227,7 @@ section {
 }
 .succes {
 	color: green;
+	font-size: 20px;
 	text-align: center;
 }
 .error_wrap {
@@ -1253,6 +1259,24 @@ section {
 	span {
 		color: #fff !important;
 		font-size: 11px;
+	}
+}
+.wrapCat {
+    height: 745px;
+}
+.filter-group {
+	margin: 0 auto 60px;
+    text-align: center;
+	.btn.btn-sm.btn-default {
+	    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	    font: 14px robotocondensedregular;
+	    padding: 10px 20px;
+	    width: auto;
+	    &.active {
+	    	background: #1d629d none repeat scroll 0 0;
+		    color: #fff;
+		    text-decoration: none;
+	    }
 	}
 }
 @import "_media.scss";

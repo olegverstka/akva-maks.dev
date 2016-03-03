@@ -1,4 +1,4 @@
 <?php
-define('MODX_CORE_PATH', 'D:/OpenServer/domains/akva-maks.dev/www/core/');
+define('MODX_CORE_PATH', '/home/users/o/olegverstka/domains/akva-max.webfrontdev.ru/core/');
 define('MODX_CONFIG_KEY', 'config');
 ?>
